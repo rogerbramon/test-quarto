@@ -16,16 +16,7 @@ jobs:
     - name: Check chrome
       run: |
         echo $(which google-chrome)
-        $(which google-chrome) --headless https://www.chromestatus.com
-  
-    - name: Check chromium
-      run: |
-        echo $(which chromium-browser)
-        $(which chromium-browser) --headless https://www.chromestatus.com
-
-    - name: Quarto check
-      run: |
-        quarto check --log-level info
+        $(which google-chrome) --headless --single-process https://www.chromestatus.com
 
     - name: Render Quarto Project
       uses: quarto-dev/quarto-actions/render@v2
