@@ -13,6 +13,10 @@ jobs:
       with:
         tinytex: true
 
+    - name: Install chromium
+      run: |
+        quarto install tool chromium
+  
     - name: Quarto check
       run: |
         quarto check --log-level info
