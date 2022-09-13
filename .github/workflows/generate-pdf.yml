@@ -13,10 +13,16 @@ jobs:
       with:
         tinytex: true
 
-    - name: Install chromium
+    - name: Check chrome
       run: |
-        quarto install tool chromium
+        echo $(which google-chrome)
+        $(which google-chrome) --headless https://www.chromestatus.com
   
+    - name: Check chromium
+      run: |
+        echo $(which chromium-browser)
+        $(which chromium-browser) --headless https://www.chromestatus.com
+
     - name: Quarto check
       run: |
         quarto check --log-level info
