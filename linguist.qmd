@@ -1,0 +1,3 @@
+# Test
+
+This is a test to evaluate how \*.qmd files are previewed when are being considered Markdown.
