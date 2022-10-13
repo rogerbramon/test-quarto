@@ -1,3 +1,11 @@
+---
+title: Linguist test
+author: Roger
+categories:
+  - test
+  - post
+---
+
 # Test
 
 This is a test to evaluate how \*.qmd files are previewed when are being considered Markdown.
