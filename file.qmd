@@ -1,0 +1,20 @@
+---
+title: Testing Quarto
+author: Roger Bramon
+---
+
+# Purpose
+
+Try to reproduce issue described [here](https://github.com/quarto-dev/quarto-actions/issues/45#issuecomment-1245488165)
+
+Mermaid diagram could be the cause of the problem:
+
+
+```{mermaid}
+graph TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+```
