@@ -1,1 +1,1 @@
-*.qmd            text diff=markdown
+*.qmd linguist-language=markdown
