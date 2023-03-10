@@ -8,4 +8,4 @@ categories:
 
 # Test
 
-This is a test to evaluate how \*.qmd files are previewed when are being considered Markdown.
+This is a test to evaluate how Quarto files are previewed when being considered as Markdown.
