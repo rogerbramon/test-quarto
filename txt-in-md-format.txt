@@ -1,4 +1,3 @@
-<!-- vim: syntax=Markdown -->
 ---
 title: Linguist test
 author: Roger
@@ -6,6 +5,8 @@ categories:
   - test
   - post
 ---
+
+<!-- vim: syntax=Markdown -->
 
 # Test
 
