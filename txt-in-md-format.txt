@@ -1,3 +1,4 @@
+<!-- vim: syntax=Markdown -->
 ---
 title: Linguist test
 author: Roger
