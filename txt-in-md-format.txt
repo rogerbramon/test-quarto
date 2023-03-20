@@ -1,0 +1,11 @@
+---
+title: Linguist test
+author: Roger
+categories:
+  - test
+  - post
+---
+
+# Test
+
+This is a test to evaluate how linguist help me preview Markdown files that are not using .md extension.
