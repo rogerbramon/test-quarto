@@ -1,0 +1,25 @@
+name: Generate PDF
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled]
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
+      with:
+        tinytex: true
+    - name: Render Quarto Project
+      uses: quarto-dev/quarto-actions/render@v2
+      with:
+        to: pdf
+        path: file.qmd
+    
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.0
+      with:
+        name: file.pdf
+        path: file.pdf
